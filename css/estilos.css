@@ -1,0 +1,411 @@
+/* reglas selectores declaraciones propiedades y valores de css */
+
+
+
+
+
+/*---------------------------------------------------------------------------generalidades*/
+body{
+  margin:0px ;
+  /* margin-top: 0px;  */
+}
+
+.clearfix{
+  clear: both;
+  float: none;
+}
+h2{
+  font-family: 'DM Mono', monospace;
+  font-size: 20px;
+  color:#CF0000;
+  transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 40px;
+  
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------*/
+ol,ul
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header {
+  background-color: #11383d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  
+  height: 90px;
+}
+.header ol
+{
+display: flex;
+
+}
+.logo-image
+{
+  width: 90px;
+  height: 90px;
+}
+
+
+.menu 
+{
+  height: inherit;
+}
+.header ol
+{
+  display: flex;
+  height: inherit;
+  align-items:center;
+  padding-right: 10px;
+}
+
+
+.header a
+{ 
+  color:white;
+  text-decoration: none;
+  margin: 0px 15px;
+  
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------HEADER*/
+h1 strong{
+  color: #CF0000;
+
+}
+
+
+
+.hero {
+  color:white;
+  font-size: 40px;
+  font-family: 'Fjalla One', sans-serif;
+  letter-spacing: -.2px;
+  font-weight: bold;
+  line-height: 1.7em;
+  background-image: url('../images/hero.jpeg');
+  background-size: 700px 500px;
+  flex-shrink:0 ;
+  background-repeat: no-repeat;
+  background-position-x:right;
+  background-color:#11383d;
+
+  object-fit: cover;
+
+  display: flex;
+  align-items: center;
+  
+}
+
+
+
+
+ /*-------------------------------------------------------------------------------------------------------PORTAFOLIO*/
+
+
+ .project {
+display: flex;
+  border:10px solid gray;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom:15px;
+
+  /*esto despega el contenido*/
+  padding:20px;
+  background:white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+}
+.project-title
+{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.project-course,.project-date,.project-url
+{
+ 
+  margin:10px 0;
+}
+
+.project .project-description
+{
+  
+  font-size: 20px;
+}
+
+.project strong
+{
+  font-family: 'Fjalla One', sans-serif ;
+}
+
+
+
+
+.project-details{
+
+  /* width:40%;
+height: 200px; */
+/* margin: 0 auto; */
+
+}
+.project-image-wrapper{
+  /* width: 700px; */
+  /* margin: auto; */
+
+}
+
+
+
+ .project-image{
+
+   width: 600px;
+   height: 500px;
+   justify-content: flex-end;
+ }
+
+
+
+.portafolio{
+  background: #FAFAFA;
+  padding: 20px;
+  
+}
+.event-list
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------eventos*/
+
+
+.event
+{
+ 
+  border:.2px solid  #00000f;
+  margin: 10px;
+  width: 480px;
+  border-radius: 10px;
+  flex-shrink: 0;
+
+  margin: 15px auto;
+/*esto hace que se oculte el contenido que se salga*/
+  overflow:hidden;
+  background-color:#f4fbff;
+
+}
+
+
+
+.event-list-title
+{
+  color:  #CF0000;
+  margin-left: 20px;
+   overflow:hidden;
+}
+
+.event img{
+  
+  width: 480px;
+  height: 200px;
+  /*esta propiedad hace que las imagenes se presente muy bien*/
+  object-fit: cover;
+
+}
+.event-details
+{
+  margin:20px 40px ;
+  margin-top: -40px;
+
+    padding: 10px;
+
+  /*position relative*/
+  position: relative;
+  text-align: center;
+
+  background-color: white;
+
+}
+.event-description
+{
+  text-align: left;
+}
+.event-url
+{
+  color: #CF0000;
+  border: 1px solid ;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------CONTATO*/
+
+
+.contact
+{
+  background-color: #CF0000;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+
+
+  justify-content: space-between;
+}
+.contact label
+{
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+
+.social-link 
+{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  
+  /* a los vectors se les tiene que marca sus medidas*/
+  background-size: 50px 50px;
+}
+.social-link.twiter
+{
+  background-image: url(/images/twitter-2.png);
+ 
+}
+
+.social-link.instagram
+{
+  background-image: url(/images/twitter-2.png);
+}
+.social-link.facebook
+{
+  background-image: url(/images/twitter-2.png);
+}
+.social-link.github
+{
+  background-image: url(/images/twitter-2.png);
+}
+
+
+
+
+.form-email input[type=email]
+{
+  border-color: gray;
+
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top:5px;
+  padding-bottom: 5px;
+  background-image: url(/images/correo.svg);
+  background-repeat:no-repeat;
+  align-items: center;
+
+  /*para cambiar la posicio*/
+  background-position-y: center;
+  background-size: 30px 20px;
+  text-align: center;
+
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.form-email button
+{
+  display: flex;
+margin-top: 5px;
+margin-left: 5px;
+
+padding: 4px 25px;
+  
+background-color: transparent;
+border: 1px solid white;
+
+color: white;
+border-radius: 5px;
+
+
+}
+/*--------------------------------------------------------------------------------------FIN CONTACTO*/
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------FOOTER*/
+footer
+{
+  background-color:#11383d ;
+  color: white;
+
+
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+footer img 
+{
+  vertical-align: middle;
+}
+footer a 
+{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------CONTEINER*/
+
+.container
+{}
+
+
+
+
+
+
+
+
+
+
+
+
+
